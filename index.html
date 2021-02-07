@@ -28,7 +28,7 @@ if (r != null) return unescape(r[2]); return null;
 document.getElementById("pri").innerHTML = getQueryString("m");
 document.getElementById("payurl").href = decodeURI(getQueryString("url"));
 if(getQueryString("up")==null){
- //没传参时可在此设置默认参数
+ //没传参时可在此设置默认参数 
 }else{
 document.getElementById("up").innerHTML = "本次支付由"+getQueryString("up")+"提供技术支持";
 }
